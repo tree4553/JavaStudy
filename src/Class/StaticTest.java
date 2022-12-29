@@ -1,3 +1,5 @@
+package Class;
+
 public class StaticTest {
     public static void main(String[] args) {
         StaticExample staticExample = new StaticExample();

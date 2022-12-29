@@ -1,3 +1,5 @@
+package Class;
+
 public class CarTest {
     public static void main(String[] args) {
         Car tesla = new Car("Model 3", "빨강");

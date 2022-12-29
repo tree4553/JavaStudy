@@ -1,3 +1,5 @@
+package Class;
+
 class Inheritance {
     public static void main(String[] args) {
         Address address1 = new Address("서울", "한국");

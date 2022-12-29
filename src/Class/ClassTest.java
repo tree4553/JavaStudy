@@ -1,3 +1,5 @@
+package Class;
+
 public class ClassTest {
     public static void main(String[] args) {
         Outer outer = new Outer();
@@ -21,8 +23,8 @@ class Outer {
         int inNum = 10;
 
         void Test() {
-            System.out.println("Outer num = " + num + "(외부 클래스의 인스턴스 변수)");
-            System.out.println("Outer sNum = " + sNum + "(외부 클래스의 정적 변수)");
+            System.out.println("Class.Outer num = " + num + "(외부 클래스의 인스턴스 변수)");
+            System.out.println("Class.Outer sNum = " + sNum + "(외부 클래스의 정적 변수)");
         }
     }
 

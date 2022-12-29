@@ -1,3 +1,5 @@
+package Class;
+
 public class StaticFieldTest {
     public static void main(String[] args) {
         StaticField staticField1 = new StaticField();
