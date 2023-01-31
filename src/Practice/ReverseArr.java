@@ -19,8 +19,20 @@ public class ReverseArr {
 
         // 헤드 테일로 나눠서 더했던거 같은데
         // array copy 쓰고
-        int[] head = new int[];
+        // !!!헤드에서 재귀를 태우고
+        // 하나씩 잘라서 tail에다가 붙여준 다음에 리턴해주면
+        // 되려나
+        // 아 헤드에다가 맨앞에꺼 넣어놓고 나머지를 테일에 재귀 태어서 넣어준
+        // 다음에 길이가 0이면 리턴해주고
+        // tail 부분 밑에다가 새로운 배열 하나 만들어서
+        // 헤드랑 테일이랑 합쳐서 리턴!!!!
+        int[] head = Arrays.copyOfRange(arr, arr.length-1, arr.length);
+        int[] tail = reverseArr(Arrays.copyOfRange(arr, 0, arr.length - 1));
 
-        return arr;
+        int[] union = new int[head.length + tail.length];
+        System.arraycopy(head, 0, union, 0, head.length);
+        System.arraycopy(tail, 0, union, head.length, tail.length);
+
+        return union;
     }
 }
