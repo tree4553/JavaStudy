@@ -1,11 +1,12 @@
-package Practice;
+package DailyCoding;
 
 import java.util.Arrays;
 
-public class ReverseArr {
+// 배열을 입력받아 순서가 뒤집힌 배열을 리턴하라, 재귀로 구현해라
+public class D_12_ReverseArr {
     public static void main(String[] args) {
         int[] output = reverseArr(new int[]{1, 2, 3});
-        System.out.println(Arrays.toString(output));
+        System.out.println(Arrays.toString(output)); // --> [3, 2, 1]
     }
 
     public static int[] reverseArr(int[] arr) {
