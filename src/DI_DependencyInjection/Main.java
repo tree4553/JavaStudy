@@ -1,8 +1,6 @@
 package DI_DependencyInjection;
 
-import java.util.ArrayList;
-
-public class main {
+public class Main {
     public static void main(String[] args) {
         Fruit a = new Fruit("딸기", "빨강", 100, 500);
         System.out.println(a.getKcal());
