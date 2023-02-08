@@ -1,6 +1,6 @@
 package java_basic;
 
-public class main {
+public class Main {
     public static void main(String[] args) {
         Person A = new Person("이정철", 32, "010-1234-5678");
         String older = A.eatAge(32);
