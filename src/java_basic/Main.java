@@ -10,7 +10,7 @@ public class Main {
         String aging = B.eatAge(20);
 
         Person temp = (Person) B; // 업캐스팅
-        Baeksu temp2 = (Baeksu) A; // 다운캐스팅
+        //Baeksu temp2 = (Baeksu) A; // 다운캐스팅
 
         //Baeksu Z = new Person("a", 1, "c");
 
