@@ -1,5 +1,8 @@
 package DailyCoding;
 
+// 문자열을 입력받아서 문자열에서 숫자를 모두 찾아서 더한 뒤
+// 더한 값을 문자열의 길이로 나눈 값을 정수로 반올림하여 반환해라.
+// 공백과 숫자는 문자열의 길이에 포함하지 않는다.
 public class D_18_NumberSearch {
     public static void main(String[] args) {
         int output = numberSearch("Hello6 ");
