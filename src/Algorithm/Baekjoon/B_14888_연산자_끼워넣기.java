@@ -10,6 +10,9 @@ import java.util.StringTokenizer;
 
 // https://www.acmicpc.net/problem/14888
 public class B_14888_연산자_끼워넣기 {
+    public static int min = Integer.MAX_VALUE;
+    public static int max = Integer.MIN_VALUE;
+
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int n = Integer.parseInt(br.readLine());
@@ -80,75 +83,80 @@ public class B_14888_연산자_끼워넣기 {
         // V2
         // 최소값 구할때는 오름차순, 최대값 구할때는 내림차순
         // operators는 복사해서 사용하자
-        Arrays.sort(numbers);
-        System.out.println(Arrays.toString(numbers));
-        int min = numbers[0];
-        int[] minOperators = new int[operators.length];
-        System.arraycopy(operators, 0, minOperators, 0, operators.length - 1);
-
-        for (int i = 0; i < n - 1; i++) {
-            if (minOperators[2] != 0) {     // *
-                min *= numbers[i + 1];
-                minOperators[2] -= 1;
-                continue;
-            }
-
-            if (minOperators[0] != 0) {     // +
-                min += numbers[i + 1];
-                minOperators[0] -= 1;
-                continue;
-            }
-
-            if (minOperators[1] != 0) {     // -
-                min -= numbers[i + 1];
-                minOperators[1] -= 1;
-                continue;
-            }
-
-            if (minOperators[3] != 0) {     // /
-                min /= numbers[i + 1];
-                minOperators[3] -= 1;
-//                continue; // 생략 가능
-            }
-        }
-
-        int max = numbers[numbers.length - 1];
-        Arrays.sort(numbers, Collections.reverseOrder());       // numbers가 Integer[] 이여야 함수가 실행 가능하네
-        System.out.println(Arrays.toString(numbers));
-        int[] maxOperators = new int[operators.length];
-        System.arraycopy(operators, 0, maxOperators, 0, operators.length - 1);
-
-        for (int i = 0; i < n - 1; i++) {
-            if (maxOperators[2] != 0) {     // *
-                max *= numbers[i + 1];
-                maxOperators[2] -= 1;
-                continue;
-            }
-
-            if (maxOperators[0] != 0) {     // +
-                max += numbers[i + 1];
-                maxOperators[0] -= 1;
-                continue;
-            }
-
-            if (maxOperators[1] != 0) {     // -
-                max -= numbers[i + 1];
-                maxOperators[1] -= 1;
-                continue;
-            }
-
-            if (maxOperators[3] != 0) {     // /
-                max /= numbers[i + 1];
-                maxOperators[3] -= 1;
-//                continue; // 생략 가능
-            }
-        }
+//        Arrays.sort(numbers);
+//        System.out.println(Arrays.toString(numbers));
+//        int min = numbers[0];
+//        int[] minOperators = new int[operators.length];
+//        System.arraycopy(operators, 0, minOperators, 0, operators.length - 1);
+//
+//        for (int i = 0; i < n - 1; i++) {
+//            if (minOperators[2] != 0) {     // *
+//                min *= numbers[i + 1];
+//                minOperators[2] -= 1;
+//                continue;
+//            }
+//
+//            if (minOperators[0] != 0) {     // +
+//                min += numbers[i + 1];
+//                minOperators[0] -= 1;
+//                continue;
+//            }
+//
+//            if (minOperators[1] != 0) {     // -
+//                min -= numbers[i + 1];
+//                minOperators[1] -= 1;
+//                continue;
+//            }
+//
+//            if (minOperators[3] != 0) {     // /
+//                min /= numbers[i + 1];
+//                minOperators[3] -= 1;
+////                continue; // 생략 가능
+//            }
+//        }
+//
+//        int max = numbers[numbers.length - 1];
+//        Arrays.sort(numbers, Collections.reverseOrder());       // numbers가 Integer[] 이여야 함수가 실행 가능하네
+//        System.out.println(Arrays.toString(numbers));
+//        int[] maxOperators = new int[operators.length];
+//        System.arraycopy(operators, 0, maxOperators, 0, operators.length - 1);
+//
+//        for (int i = 0; i < n - 1; i++) {
+//            if (maxOperators[2] != 0) {     // *
+//                max *= numbers[i + 1];
+//                maxOperators[2] -= 1;
+//                continue;
+//            }
+//
+//            if (maxOperators[0] != 0) {     // +
+//                max += numbers[i + 1];
+//                maxOperators[0] -= 1;
+//                continue;
+//            }
+//
+//            if (maxOperators[1] != 0) {     // -
+//                max -= numbers[i + 1];
+//                maxOperators[1] -= 1;
+//                continue;
+//            }
+//
+//            if (maxOperators[3] != 0) {     // /
+//                max /= numbers[i + 1];
+//                maxOperators[3] -= 1;
+////                continue; // 생략 가능
+//            }
+//        }
         // 조짐 안됨
         // 재귀로 풀어야 되는 문제인거 같다라는 생각이 들긴 했는데
         // 어떻게 해야되나..
 
 
+
         System.out.println(max);
         System.out.println(min);
+    }
+
+    private static void dfs(int num, int idx) {
+
     }
 }
