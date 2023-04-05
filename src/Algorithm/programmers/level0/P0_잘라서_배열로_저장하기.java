@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 // https://school.programmers.co.kr/learn/courses/30/lessons/120913
-public class P_잘라서_배열로_저장하기 {
+public class P0_잘라서_배열로_저장하기 {
     public static void main(String[] args) {
         System.out.println(Arrays.toString(solution("abc1Addfggg4556b", 6)));   // ["abc1Ad", "dfggg4", "556b"]
         System.out.println(Arrays.toString(solution("abcdef123", 3)));  // ["abc", "def", "123"]

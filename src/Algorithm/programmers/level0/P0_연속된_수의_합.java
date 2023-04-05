@@ -3,7 +3,7 @@ package Algorithm.programmers.level0;
 import java.util.Arrays;
 
 // https://school.programmers.co.kr/learn/courses/30/lessons/120923
-public class P_연속된_수의_합 {
+public class P0_연속된_수의_합 {
     public static void main(String[] args) {
         System.out.println(Arrays.toString(solution(3, 12)));    //  [3, 4, 5]
         System.out.println(Arrays.toString(solution(4, 14)));    // [2, 3, 4, 5]

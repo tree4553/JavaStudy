@@ -3,7 +3,7 @@ package Algorithm.programmers.level0;
 import java.util.Arrays;
 
 // https://school.programmers.co.kr/learn/courses/30/lessons/120890
-public class P_가까운_수 {
+public class P0_가까운_수 {
     public static void main(String[] args) {
         System.out.println(solution(new int[]{3, 10, 28}, 20)); // 28
         System.out.println(solution(new int[]{12, 10, 8}, 11)); // 10

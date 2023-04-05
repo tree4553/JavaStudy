@@ -1,7 +1,7 @@
 package Algorithm.programmers.level0;
 
 // https://school.programmers.co.kr/learn/courses/30/lessons/120894
-public class P_영어가_싫어요 {
+public class P0_영어가_싫어요 {
     public static void main(String[] args) {
         System.out.println(solution1("onetwothreefourfivesixseveneightnine"));   // 123456789
         System.out.println(solution1("onefourzerosixseven"));    // 14067

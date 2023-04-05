@@ -1,7 +1,7 @@
 package Algorithm.programmers.level0;
 
 // https://school.programmers.co.kr/learn/courses/30/lessons/120891
-public class P_369게임 {
+public class P0_369게임 {
     public static void main(String[] args) {
         System.out.println(solution(3));        // 1
         System.out.println(solution(29423));    // 2

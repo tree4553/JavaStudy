@@ -1,7 +1,7 @@
 package Algorithm.programmers.level0;
 
 // https://school.programmers.co.kr/learn/courses/30/lessons/120902
-public class P_문자열_계산하기 {
+public class P0_문자열_계산하기 {
     public static void main(String[] args) {
         System.out.println(solution("3 + 4"));  // 7
         System.out.println(solution("1 + 2 + 3"));  // 6

@@ -1,7 +1,7 @@
 package Algorithm.programmers.level0;
 
 // https://school.programmers.co.kr/learn/courses/30/lessons/120896
-public class P_한_번만_등장한_문자 {
+public class P0_한_번만_등장한_문자 {
     public static void main(String[] args) {
         System.out.println(solution("abcabcadc"));  // "d"
         System.out.println(solution("abdc"));       // "abcd"

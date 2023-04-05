@@ -1,7 +1,7 @@
 package Algorithm.programmers.level0;
 
 // https://school.programmers.co.kr/learn/courses/30/lessons/120912
-public class P_7의_개수 {
+public class P0_7의_개수 {
     public static void main(String[] args) {
         System.out.println(solution(new int[]{7, 77, 17})); // 4
         System.out.println(solution(new int[]{10, 29}));    // 0

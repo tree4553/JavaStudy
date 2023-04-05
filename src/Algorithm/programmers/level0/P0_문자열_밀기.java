@@ -1,7 +1,7 @@
 package Algorithm.programmers.level0;
 
 // https://school.programmers.co.kr/learn/courses/30/lessons/120921
-public class P_문자열_밀기 {
+public class P0_문자열_밀기 {
     public static void main(String[] args) {
         System.out.println(solution("hello", "ohell")); // 1
         System.out.println(solution("apple", "elppa")); // -1

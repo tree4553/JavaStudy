@@ -1,7 +1,7 @@
 package Algorithm.programmers.level0;
 
 // https://school.programmers.co.kr/learn/courses/30/lessons/120892
-public class P_암호_해독 {
+public class P0_암호_해독 {
 
     public static void main(String[] args) {
         System.out.println(solution("dfjardstddetckdaccccdegk", 4));    // "attack"
