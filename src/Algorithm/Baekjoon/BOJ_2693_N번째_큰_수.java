@@ -8,7 +8,7 @@ import java.util.StringTokenizer;
 import java.util.Collections;
 
 // https://www.acmicpc.net/problem/2693
-public class B_2693_N번째_큰_수 {
+public class BOJ_2693_N번째_큰_수 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int n = Integer.parseInt(br.readLine());

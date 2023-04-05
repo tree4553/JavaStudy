@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
 // https://www.acmicpc.net/problem/1978
-public class B_1978_소수_찾기 {
+public class BOJ_1978_소수_찾기 {
     public static void main(String[] args) throws IOException {
         int answer = 0;
 

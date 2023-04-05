@@ -8,7 +8,7 @@ import java.util.Collections;
 import java.util.StringTokenizer;
 
 // https://www.acmicpc.net/problem/10818
-public class B_10818_최소_최대 {
+public class BOJ_10818_최소_최대 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringBuilder sb = new StringBuilder();

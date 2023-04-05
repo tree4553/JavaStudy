@@ -3,13 +3,10 @@ package Algorithm.Baekjoon;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
 import java.util.StringTokenizer;
 
 // https://www.acmicpc.net/problem/14888
-public class B_14888_연산자_끼워넣기 {
+public class BOJ_14888_연산자_끼워넣기 {
     public static int min = Integer.MAX_VALUE;
     public static int max = Integer.MIN_VALUE;
     // [0] = + , [1] = - , [2] = * , [3] = /

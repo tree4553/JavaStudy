@@ -1,6 +1,6 @@
 package Algorithm.Baekjoon;
 
-public class B_25083 {
+public class BOJ_25083 {
     public static void main(String[] args) {
         System.out.println("         ,r'\"7\n" +
                 "r`-_   ,'  ,/\n" +

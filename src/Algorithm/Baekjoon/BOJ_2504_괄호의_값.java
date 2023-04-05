@@ -4,10 +4,9 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
-import java.util.Arrays;
 
 // https://www.acmicpc.net/problem/2504
-public class B_2504_괄호의_값 {
+public class BOJ_2504_괄호의_값 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String input = br.readLine();
@@ -63,7 +62,7 @@ public class B_2504_괄호의_값 {
         if (count[0] != count[1]) return 0;
         if (count[2] != count[3]) return 0;
 
-        // 기호의 순서가 맞지 않는 경우도 확인해야 된다!
+        // 기호의 순서가 맞지 않는 경우도 확인해야 된다! (] [)
         for (int i = 0; i < strArr.size() - 1; i++) {
             if(strArr.get(i).equals("(") && strArr.get(i + 1).equals("]")) {
                 return 0;
