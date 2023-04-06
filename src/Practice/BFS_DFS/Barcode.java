@@ -1,4 +1,4 @@
-package Algorithm.BFS_DFS;
+package Practice.BFS_DFS;
 
 public class Barcode {
     public static void main(String[] args) {

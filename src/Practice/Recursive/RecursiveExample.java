@@ -1,4 +1,4 @@
-package Algorithm.Recursive;
+package Practice.Recursive;
 
 import java.util.Arrays;
 
